@@ -594,16 +594,50 @@ class ViewController: UIViewController, AKKeyboardDelegate{
         
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        drumPlayer.stop()
-        snarePlayer.stop()
+   
+    
+    @IBAction func stopAll(_ sender: Any) {
+          print("pressed")
+
+       
         
+       stopAll()
+        
+            print("stoped")
+        
+        
+    }
+    
+    func stopAll(){
+        
+        drumTimer1.invalidate()
+        drumTimer2.invalidate()
+        drumTimer3.invalidate()
+        
+        snareTimer1.invalidate()
+        snareTimer2.invalidate()
+        snareTimer3.invalidate()
+        
+        closedTimer1.invalidate()
+        closedTimer2.invalidate()
+        closedTimer3.invalidate()
+        
+        openTimer1.invalidate()
+        openTimer2.invalidate()
+        openTimer3.invalidate()
+        
+    }
+   
+    override func viewWillDisappear(_ animated: Bool) {
+       
         do{
+            stopAll()
             try AudioKit.stop()
         
         }catch{
             print("AudioKit doesnt stop!")
         }
+        
     
     }
 }

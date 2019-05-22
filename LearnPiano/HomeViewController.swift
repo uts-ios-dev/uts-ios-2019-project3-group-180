@@ -11,7 +11,9 @@ import AudioKit
 import AudioKitUI
 
 class HomeViewController: UIViewController {
-  
+    
+
+    
     let oscillator = AKOscillatorBank()
     var att = 0.1
     var dec = 0.1

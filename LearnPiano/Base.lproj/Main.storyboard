@@ -191,6 +191,7 @@
                                     <color key="titleColor" red="1" green="0.49529635906219482" blue="0.79175180196762085" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="stopAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XrX-Ft-CeH"/>
                                     <segue destination="azE-R9-C9E" kind="unwind" unwindAction="unwindToHomeWithUnwindSegue:" id="cmU-2Q-pD8"/>
                                 </connections>
                             </button>
