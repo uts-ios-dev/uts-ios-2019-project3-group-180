@@ -151,6 +151,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     let oscillator = AKOscillatorBank()
     var drumPlayer = AVAudioPlayer()
     var snarePlayer = AVAudioPlayer()
+    
     //need to change the values below
     var att = 0.0
     var dec = 0.0
@@ -188,16 +189,16 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     override func viewDidLoad() {
        
         super.viewDidLoad()
-      
         oscillator.attackDuration = att
         oscillator.decayDuration = dec
         oscillator.sustainLevel  = sus
         oscillator.releaseDuration = rel
         
         AudioKit.output = oscillator
-      
+        
         do {
             try AudioKit.start()
+        
         } catch {
             AKLog("AudioKit did not start!")
         }
@@ -416,11 +417,17 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        drumPlayer.stop()
+       drumPlayer.stop()
         snarePlayer.stop()
+        
+        do{
+            try AudioKit.stop()
+        
+        }catch{
+            print("AudioKit doesnt stop!")
+        }
+    
     }
-    
-    
 }
 
 

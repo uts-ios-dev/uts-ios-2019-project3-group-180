@@ -42,6 +42,10 @@ class HomeViewController: UIViewController {
             dest.rel =  self.oscillator.releaseDuration
         }
     }
+    
+    @IBAction func unwindToHome(unwindSegue: UIStoryboardSegue) {
+    
+        }
 
     /*
     // MARK: - Navigation

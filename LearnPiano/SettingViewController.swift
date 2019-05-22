@@ -69,7 +69,7 @@ class SettingViewController: UIViewController {
         let dest = segue.destination as! HomeViewController
             dest.att =  self.oscillator.attackDuration
             dest.dec =  self.oscillator.decayDuration
-            dest.sus =  self.oscillator.decayDuration
+            dest.sus =  self.oscillator.sustainLevel
             dest.rel =  self.oscillator.releaseDuration 
             
         }
