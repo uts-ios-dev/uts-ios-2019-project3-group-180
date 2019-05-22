@@ -13,10 +13,10 @@ import AudioKitUI
 class HomeViewController: UIViewController {
   
     let oscillator = AKOscillatorBank()
-    var att = 0.0
-    var dec = 0.0
-    var sus = 0.0
-    var rel = 0.0
+    var att = 0.1
+    var dec = 0.1
+    var sus = 0.5
+    var rel = 0.1
 
     override func viewDidLoad() {
         

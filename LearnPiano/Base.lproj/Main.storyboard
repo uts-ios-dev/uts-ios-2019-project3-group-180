@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inc-Mw-sdu">
-                                <rect key="frame" x="72" y="20" width="153" height="45"/>
+                                <rect key="frame" x="69" y="20" width="153" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.72344638375196935" blue="0.037392705129146608" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="35"/>
@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEh-MF-FN9">
-                                <rect key="frame" x="72" y="74" width="154" height="46"/>
+                                <rect key="frame" x="69" y="74" width="154" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.72344638380000004" blue="0.037392705130000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="35"/>
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EF-ZL-hNl">
-                                <rect key="frame" x="258" y="20" width="154" height="46"/>
+                                <rect key="frame" x="255" y="20" width="154" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.40197678271325843" blue="0.75365322816413804" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="35"/>
@@ -57,7 +57,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pn-sV-3fI">
-                                <rect key="frame" x="258" y="74" width="154" height="46"/>
+                                <rect key="frame" x="255" y="74" width="154" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.40197678271325843" blue="0.75365322816413804" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="35"/>
@@ -68,7 +68,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GzE-G9-9pE">
-                                <rect key="frame" x="258" y="128" width="154" height="46"/>
+                                <rect key="frame" x="255" y="128" width="154" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.40197678271325843" blue="0.75365322816413804" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="35"/>
@@ -79,31 +79,40 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ef-c1-Vfh">
-                                <rect key="frame" x="448" y="20" width="154" height="46"/>
+                                <rect key="frame" x="445" y="20" width="154" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.62601636773690272" green="0.46254239748416492" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="35"/>
                                 <size key="titleShadowOffset" width="198" height="200"/>
                                 <state key="normal" title="1/4"/>
+                                <connections>
+                                    <action selector="closed3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GXu-dN-dwL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjQ-Xq-2wT">
-                                <rect key="frame" x="448" y="74" width="154" height="46"/>
+                                <rect key="frame" x="445" y="74" width="154" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.62601636773690272" green="0.46254239748416492" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="35"/>
                                 <size key="titleShadowOffset" width="198" height="200"/>
                                 <state key="normal" title="1/2"/>
+                                <connections>
+                                    <action selector="closed2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X9E-0R-tfl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Et1-sl-9uO">
-                                <rect key="frame" x="448" y="128" width="154" height="46"/>
+                                <rect key="frame" x="445" y="128" width="154" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.62601636773690272" green="0.46254239748416492" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="35"/>
                                 <size key="titleShadowOffset" width="198" height="200"/>
                                 <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="closed1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wxF-Rg-DRe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FR4-Uo-zYk">
-                                <rect key="frame" x="72" y="128" width="154" height="46"/>
+                                <rect key="frame" x="69" y="128" width="154" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.72344638380000004" blue="0.037392705130000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="35"/>
@@ -114,62 +123,73 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Yh-gV-shb">
-                                <rect key="frame" x="633" y="20" width="154" height="46"/>
+                                <rect key="frame" x="630" y="20" width="154" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.14907150323384333" green="0.77378981038214012" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="35"/>
                                 <size key="titleShadowOffset" width="198" height="200"/>
                                 <state key="normal" title="1/4"/>
+                                <connections>
+                                    <action selector="open3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Q2-yq-oD1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUf-2q-5fo">
-                                <rect key="frame" x="633" y="74" width="154" height="46"/>
+                                <rect key="frame" x="630" y="74" width="154" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.14907150323384333" green="0.77378981038214012" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="35"/>
                                 <size key="titleShadowOffset" width="198" height="200"/>
                                 <state key="normal" title="1/2"/>
+                                <connections>
+                                    <action selector="open2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jxl-jE-mai"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bal-BV-bAd">
-                                <rect key="frame" x="633" y="128" width="154" height="46"/>
+                                <rect key="frame" x="630" y="128" width="154" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.14907150323384333" green="0.77378981038214012" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="35"/>
                                 <size key="titleShadowOffset" width="198" height="200"/>
                                 <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="open1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZn-fQ-t7G"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Snare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EN1-x0-FJt">
-                                <rect key="frame" x="316" y="0.0" width="39" height="16"/>
+                                <rect key="frame" x="316" y="1" width="39" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.49529635906219482" blue="0.79175180196762085" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Closed-HiHat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuk-iA-JVb">
-                                <rect key="frame" x="476" y="-1" width="93" height="16"/>
+                                <rect key="frame" x="476" y="1" width="93" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.68365353345870972" green="0.54380828142166138" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open-HiHat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4I-1S-MKC">
-                                <rect key="frame" x="667" y="0.0" width="78" height="16"/>
+                                <rect key="frame" x="667" y="1" width="78" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.27736791968345642" green="0.80922526121139526" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhj-AW-4X6">
-                                <rect key="frame" x="136" y="0.0" width="31" height="16"/>
+                                <rect key="frame" x="136" y="1" width="31" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.76535195112228394" blue="0.18692293763160706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUv-Qn-NpR">
-                                <rect key="frame" x="30" y="20" width="34" height="31"/>
+                                <rect key="frame" x="27" y="20" width="34" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="18"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="0.49529635906219482" blue="0.79175180196762085" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="azE-R9-C9E" kind="unwind" unwindAction="unwindToHomeWithUnwindSegue:" id="cmU-2Q-pD8"/>
                                 </connections>
@@ -179,9 +199,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="closed1" destination="Et1-sl-9uO" id="TC4-1C-Hey"/>
+                        <outlet property="closed2" destination="bjQ-Xq-2wT" id="Xhf-Wf-qEm"/>
+                        <outlet property="closed3" destination="8Ef-c1-Vfh" id="MHS-KF-JcD"/>
                         <outlet property="drum1" destination="FR4-Uo-zYk" id="a2k-Jo-2pC"/>
                         <outlet property="drum2" destination="wEh-MF-FN9" id="1Iw-pU-rwM"/>
                         <outlet property="drum3" destination="inc-Mw-sdu" id="h4i-fj-10J"/>
+                        <outlet property="open1" destination="Bal-BV-bAd" id="3qQ-d0-LDD"/>
+                        <outlet property="open2" destination="SUf-2q-5fo" id="zdW-Qg-vZV"/>
+                        <outlet property="open3" destination="7Yh-gV-shb" id="jqX-T5-qCM"/>
                         <outlet property="snare1" destination="GzE-G9-9pE" id="wFK-1C-c4t"/>
                         <outlet property="snare2" destination="7pn-sV-3fI" id="flS-ru-eBJ"/>
                         <outlet property="snare3" destination="0EF-ZL-hNl" id="E0P-z4-1Oe"/>
@@ -225,7 +251,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezs-Y6-Gey">
-                                <rect key="frame" x="316" y="259" width="133" height="55"/>
+                                <rect key="frame" x="316" y="271" width="133" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="40"/>
                                 <state key="normal" title="HELP">
@@ -261,6 +287,34 @@
                                     <segue destination="U0k-77-kgC" kind="show" identifier="HomeViewSegue" id="ugh-LW-gwo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Attack Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dU-Td-qzL">
+                                <rect key="frame" x="500" y="10" width="130" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="17"/>
+                                <color key="textColor" red="0.7696414589881897" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Decay Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8Z-Dk-RaC">
+                                <rect key="frame" x="501" y="43" width="109" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="17"/>
+                                <color key="textColor" red="0.93992739915847778" green="0.64675402641296387" blue="0.0017241156892850995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sustain Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgM-MW-gCB">
+                                <rect key="frame" x="668" y="12" width="101" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="17"/>
+                                <color key="textColor" red="0.31563794612884521" green="0.78042513132095337" blue="0.60010391473770142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Release Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJ9-Mc-Xgc">
+                                <rect key="frame" x="656" y="43" width="124" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Digital-7Mono" family="Digital-7" pointSize="17"/>
+                                <color key="textColor" red="0.71670275926589966" green="0.51914829015731812" blue="0.88365715742111206" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="3o9-L7-dKU"/>

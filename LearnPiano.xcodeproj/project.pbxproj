@@ -25,9 +25,6 @@
 		DFB1BF9522928CA30083EE24 /* open_hi_hat_A#1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8D22928CA30083EE24 /* open_hi_hat_A#1.wav */; };
 		DFB1BF9622928CA30083EE24 /* clap_D#1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8E22928CA30083EE24 /* clap_D#1.wav */; };
 		DFB1BF9722928CA30083EE24 /* hi_tom_D2.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8F22928CA30083EE24 /* hi_tom_D2.wav */; };
-		DFB1BF9D22928CCB0083EE24 /* Bell.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF9A22928CCB0083EE24 /* Bell.wav */; };
-		DFB1BF9E22928CCB0083EE24 /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF9B22928CCB0083EE24 /* click.wav */; };
-		DFB1BF9F22928CCB0083EE24 /* FM Piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF9C22928CCB0083EE24 /* FM Piano.wav */; };
 		DFC2E2672288F7F400E71D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2E2662288F7F400E71D3B /* AppDelegate.swift */; };
 		DFC2E2692288F7F400E71D3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2E2682288F7F400E71D3B /* ViewController.swift */; };
 		DFC2E26C2288F7F400E71D3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC2E26A2288F7F400E71D3B /* Main.storyboard */; };
@@ -58,9 +55,6 @@
 		DFB1BF8D22928CA30083EE24 /* open_hi_hat_A#1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "open_hi_hat_A#1.wav"; sourceTree = "<group>"; };
 		DFB1BF8E22928CA30083EE24 /* clap_D#1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "clap_D#1.wav"; sourceTree = "<group>"; };
 		DFB1BF8F22928CA30083EE24 /* hi_tom_D2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hi_tom_D2.wav; sourceTree = "<group>"; };
-		DFB1BF9A22928CCB0083EE24 /* Bell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bell.wav; sourceTree = "<group>"; };
-		DFB1BF9B22928CCB0083EE24 /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
-		DFB1BF9C22928CCB0083EE24 /* FM Piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "FM Piano.wav"; sourceTree = "<group>"; };
 		DFC2E2632288F7F400E71D3B /* LearnPiano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnPiano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC2E2662288F7F400E71D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFC2E2682288F7F400E71D3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,12 +99,15 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		DFB1BF83229283930083EE24 /* DrumSound */ = {
+		DFB1BF83229283930083EE24 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				DFB1BF8D22928CA30083EE24 /* open_hi_hat_A#1.wav */,
+				DFB1BF8A22928CA20083EE24 /* closed_hi_hat_F#1.wav */,
+				DFB1BF8922928CA20083EE24 /* snare_D1.wav */,
 				DFB1BF812292838F0083EE24 /* kickDrum.wav */,
 			);
-			path = DrumSound;
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		DFB1BF9922928CB00083EE24 /* Drum */ = {
@@ -118,12 +115,9 @@
 			children = (
 				DFB1BF8C22928CA30083EE24 /* bass_drum_C1.wav */,
 				DFB1BF8E22928CA30083EE24 /* clap_D#1.wav */,
-				DFB1BF8A22928CA20083EE24 /* closed_hi_hat_F#1.wav */,
 				DFB1BF8F22928CA30083EE24 /* hi_tom_D2.wav */,
 				DFB1BF8822928CA20083EE24 /* lo_tom_F1.wav */,
 				DFB1BF8B22928CA20083EE24 /* mid_tom_B1.wav */,
-				DFB1BF8D22928CA30083EE24 /* open_hi_hat_A#1.wav */,
-				DFB1BF8922928CA20083EE24 /* snare_D1.wav */,
 			);
 			path = Drum;
 			sourceTree = "<group>";
@@ -131,9 +125,6 @@
 		DFB1BFA022928CD50083EE24 /* Samples */ = {
 			isa = PBXGroup;
 			children = (
-				DFB1BF9A22928CCB0083EE24 /* Bell.wav */,
-				DFB1BF9B22928CCB0083EE24 /* click.wav */,
-				DFB1BF9C22928CCB0083EE24 /* FM Piano.wav */,
 				DFB1BF9922928CB00083EE24 /* Drum */,
 			);
 			path = Samples;
@@ -160,7 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				DFB1BFA022928CD50083EE24 /* Samples */,
-				DFB1BF83229283930083EE24 /* DrumSound */,
+				DFB1BF83229283930083EE24 /* Sounds */,
 				DF4D7A40228E4317006BE82F /* Background */,
 				DF9CE42A228E389A00F774B6 /* Font */,
 				DFC2E2662288F7F400E71D3B /* AppDelegate.swift */,
@@ -254,9 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF4D7A3D228E3DD4006BE82F /* digital-7-mono_[allfont.net].ttf in Resources */,
-				DFB1BF9D22928CCB0083EE24 /* Bell.wav in Resources */,
 				DFB1BF9522928CA30083EE24 /* open_hi_hat_A#1.wav in Resources */,
-				DFB1BF9F22928CCB0083EE24 /* FM Piano.wav in Resources */,
 				DFB1BF9322928CA30083EE24 /* mid_tom_B1.wav in Resources */,
 				DFB1BF9222928CA30083EE24 /* closed_hi_hat_F#1.wav in Resources */,
 				DFB1BF9622928CA30083EE24 /* clap_D#1.wav in Resources */,
@@ -265,7 +254,6 @@
 				DFB1BF9422928CA30083EE24 /* bass_drum_C1.wav in Resources */,
 				DFB1BF9722928CA30083EE24 /* hi_tom_D2.wav in Resources */,
 				DFC2E2712288F7F500E71D3B /* Assets.xcassets in Resources */,
-				DFB1BF9E22928CCB0083EE24 /* click.wav in Resources */,
 				DFB1BF822292838F0083EE24 /* kickDrum.wav in Resources */,
 				DFB1BF9122928CA30083EE24 /* snare_D1.wav in Resources */,
 				DFC2E26C2288F7F400E71D3B /* Main.storyboard in Resources */,

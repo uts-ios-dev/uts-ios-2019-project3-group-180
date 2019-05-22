@@ -71,7 +71,7 @@ class SettingViewController: UIViewController {
             dest.dec =  self.oscillator.decayDuration
             dest.sus =  self.oscillator.sustainLevel
             dest.rel =  self.oscillator.releaseDuration 
-            
+       
         }
        
   
