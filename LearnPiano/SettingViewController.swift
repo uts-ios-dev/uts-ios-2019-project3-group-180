@@ -15,7 +15,8 @@ class SettingViewController: UIViewController {
     var polyphonicMode = false
     let oscillator = AKOscillatorBank()
     var transportView: CAInterAppAudioTransportView?
-    
+    let switchSavingKey = "switchSavingKey"
+   
     @IBOutlet weak var modeSetting: UISwitch!
     
     @IBOutlet weak var modeLabel: UILabel!
@@ -32,6 +33,11 @@ class SettingViewController: UIViewController {
         //Audiobus.start()
        
         setupUI()
+         let swithState = UserDefaults.standard.bool(forKey: switchSavingKey)
+        modeSetting.isOn = swithState
+        
+    
+        print(UserDefaults.standard.bool(forKey: switchSavingKey))
         //modeSetting.addTarget(self, action: #selector(stateChanged), for: .valueChanged)
         super.viewDidLoad()
     }
@@ -76,12 +82,18 @@ class SettingViewController: UIViewController {
     
     
     @IBAction func modeSetting(_ sender: UISwitch) {
+      
         if modeSetting.isOn{
              modeLabel.text = "Monophonic Mode"
              polyphonicMode = false
+              UserDefaults.standard.set(sender.isOn, forKey:switchSavingKey)
+            
+           
         }else{
+             UserDefaults.standard.set(sender.isOn, forKey:switchSavingKey)
             modeLabel.text = "Polyphonic Mode"
              polyphonicMode = true
+            
         }
     }
     
