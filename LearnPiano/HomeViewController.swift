@@ -13,7 +13,7 @@ import AudioKitUI
 class HomeViewController: UIViewController {
     
 
-    
+    var polyphonicMode = false
     let oscillator = AKOscillatorBank()
     var att = 0.1
     var dec = 0.1
@@ -42,6 +42,7 @@ class HomeViewController: UIViewController {
             dest.dec =  self.oscillator.decayDuration
             dest.sus =  self.oscillator.sustainLevel 
             dest.rel =  self.oscillator.releaseDuration
+            dest.polyphonicMode = polyphonicMode
         }
     }
     

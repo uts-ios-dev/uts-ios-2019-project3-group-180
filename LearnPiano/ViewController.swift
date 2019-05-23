@@ -7,111 +7,6 @@
 //
 
 
-
-/*
-import AudioKit
-import UIKit
-import AudioKitUI
-
-class ViewController: UIViewController, AKKeyboardDelegate{
-    let fmBank = AKFMOscillatorBank()
-    
-
-      var keyboard: AKKeyboardView!
-    override func viewDidLoad() {
-        AudioKit.output = fmBank
-        do {
-            try AudioKit.start()
-        } catch {
-            AKLog("AudioKit did not start!")
-        }
-        super.viewDidLoad()
-     
-        
-         self.view.addSubview(AKSlider(property: "Carrier Multiplier",
-                         value: fmBank.carrierMultiplier,
-                         range: 0 ... 2
-        ) { multiplier in
-            self.fmBank.carrierMultiplier = multiplier
-        })
-        
-         self.view.addSubview(AKSlider(property: "Modulating Multiplier",
-                         value: fmBank.modulatingMultiplier,
-                         range: 0 ... 2
-        ) { multiplier in
-            self.fmBank.modulatingMultiplier = multiplier
-        })
-        
-        self.view.addSubview(AKSlider(property: "Modulation Index",
-                         value: fmBank.modulationIndex,
-                         range: 0 ... 20
-        ) { index in
-            self.fmBank.modulationIndex = index
-        })
-        
-        let adsrView = AKADSRView { att, dec, sus, rel in
-            self.fmBank.attackDuration = att
-            self.fmBank.decayDuration = dec
-            self.fmBank.sustainLevel = sus
-            self.fmBank.releaseDuration = rel
-    }
-  
-    
-        adsrView.attackDuration = fmBank.attackDuration
-        adsrView.decayDuration = fmBank.decayDuration
-        adsrView.releaseDuration = fmBank.releaseDuration
-        adsrView.sustainLevel = fmBank.sustainLevel
-        self.view.addSubview(adsrView)
-        
-         self.view.addSubview(AKSlider(property: "Pitch Bend",
-                         value: fmBank.pitchBend,
-                         range: -12 ... 12,
-                         format: "%0.2f semitones"
-        ) { sliderValue in
-            self.fmBank.pitchBend = sliderValue
-        })
-        
-       self.view.addSubview(AKSlider(property: "Vibrato Depth",
-                         value: fmBank.vibratoDepth,
-                         range: 0 ... 2,
-                         format: "%0.2f semitones"
-        ) { sliderValue in
-            self.fmBank.vibratoDepth = sliderValue
-        })
-        
-         self.view.addSubview(AKSlider(property: "Vibrato Rate",
-                         value: fmBank.vibratoRate,
-                         range: 0 ... 10,
-                         format: "%0.2f Hz"
-        ) { sliderValue in
-            self.fmBank.vibratoRate = sliderValue
-        })
-         
-        keyboard = AKKeyboardView(frame: ScreenControl.manageSize(rect: CGRect(x: 0, y:200, width: 800, height: 250)))
-        keyboard.polyphonicMode = false
-        keyboard.delegate = self
-        self.view.addSubview(keyboard)
-        
-         self.view.addSubview(AKButton(title: "Go Polyphonic") { button in
-            self.keyboard.polyphonicMode = !self.keyboard.polyphonicMode
-            if self.keyboard.polyphonicMode {
-                button.title = "Go Monophonic"
-            } else {
-                button.title = "Go Polyphonic"
-            }
-        })
-    }
-    
-    func noteOn(note: MIDINoteNumber) {
-        fmBank.play(noteNumber: note, velocity: 80)
-    }
-    
-    func noteOff(note: MIDINoteNumber) {
-        fmBank.stop(noteNumber: note)
-    }
-}
- */
-
 import AudioKit
 import UIKit
 import AudioKitUI
@@ -184,9 +79,11 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     
     var playeringFlag: Int = 0
     
+    var polyphonicMode = false
+    
    
     
-   var isPlaying = false
+    var isPlaying = false
 
     
     @IBOutlet weak var drum1: UIButton!
@@ -251,7 +148,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     func loadKeyboard() {
 
         let keyboardView = AKKeyboardView(frame: ScreenControl.manageSize(rect: CGRect(x: 0, y:200, width: 800, height: 250)))
-        keyboardView.polyphonicMode = false
+        keyboardView.polyphonicMode = polyphonicMode
         keyboardView.delegate = self
         
         self.view.addSubview(keyboardView)
@@ -601,7 +498,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
 
        
         
-       stopAll()
+           stopAll()
         
             print("stoped")
         
