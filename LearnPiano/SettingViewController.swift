@@ -2,10 +2,10 @@
 //  SettingViewController.swift
 //  LearnPiano
 //
-//  Created by xianyulee on 2019/5/17.
-//  Copyright © 2019 Xianyu. All rights reserved.
+//  Created by Yizhe CHEN on 2019/5/17.
 //
-//YIzhe design
+// Setting page to control the attackDuration
+//Setting page to control the DecayDuration
 import AudioKit
 import UIKit
 import AudioKitUI
