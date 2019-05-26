@@ -2,8 +2,7 @@
 //  SettingViewController.swift
 //  LearnPiano
 //
-//  Created by xianyulee on 2019/5/17.
-//  Copyright © 2019 Xianyu. All rights reserved.
+//  Created by Yizhe CHEN on 2019/5/17.
 //
 
 import AudioKit
@@ -16,7 +15,7 @@ class SettingViewController: UIViewController {
     let oscillator = AKOscillatorBank()
     var transportView: CAInterAppAudioTransportView?
     let switchSavingKey = "switchSavingKey"
-   
+    
     @IBOutlet weak var modeSetting: UISwitch!
     
     @IBOutlet weak var modeLabel: UILabel!
@@ -31,27 +30,18 @@ class SettingViewController: UIViewController {
             AKLog("AudioKit did not start!")
         }
         //Audiobus.start()
-       
+        loadSwitchSetting()
         setupUI()
-         let swithState = UserDefaults.standard.bool(forKey: switchSavingKey)
-        modeSetting.isOn = swithState
-        
-    
-        print(UserDefaults.standard.bool(forKey: switchSavingKey))
-        //modeSetting.addTarget(self, action: #selector(stateChanged), for: .valueChanged)
         super.viewDidLoad()
     }
-    /*
-    @objc func stateChanged(switchState: UISwitch) {
-        if modeSetting.isOn{
-            modeLabel.text = "Monophonic Mode"
-            polyphonicMode = false
-        }else{
-            modeLabel.text = "Polyphonic Mode"
-            polyphonicMode = true
-        }
+    
+    // Save switch setting
+    func loadSwitchSetting(){
+        let switchState = UserDefaults.standard.bool(forKey: switchSavingKey)
+        modeSetting.isOn = switchState
     }
-  */
+    
+    // Set up setting view
     func setupUI() {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -59,68 +49,75 @@ class SettingViewController: UIViewController {
         stackView.alignment = .fill
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
+        //Import from AudioKit framework
         let adsrView = AKADSRView { att, dec , sus , rel in
             
             self.oscillator.attackDuration = Double(att)
             self.oscillator.decayDuration = Double(dec)
             self.oscillator.sustainLevel = Double(sus)
             self.oscillator.releaseDuration = Double(rel)
-    
+            
             
         }
         
         stackView.addArrangedSubview(adsrView)
-    
+        
         view.addSubview(stackView)
         
+        //Contraints
         stackView.widthAnchor.constraint(equalToConstant: view.frame.width).isActive = true
         stackView.heightAnchor.constraint(equalToConstant: 250).isActive = true
         stackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
- 
+        
     }
     
-    
+    //Change piano mode
     @IBAction func modeSetting(_ sender: UISwitch) {
-      
+        
         if modeSetting.isOn{
-             modeLabel.text = "Monophonic Mode"
-             polyphonicMode = false
-              UserDefaults.standard.set(sender.isOn, forKey:switchSavingKey)
+            modeLabel.text = "Monophonic Mode"
+            polyphonicMode = false
+            //save setting
+            UserDefaults.standard.set(sender.isOn, forKey:switchSavingKey)
             
-           
+            
         }else{
-             UserDefaults.standard.set(sender.isOn, forKey:switchSavingKey)
+            //save setting
+            UserDefaults.standard.set(sender.isOn, forKey:switchSavingKey)
             modeLabel.text = "Polyphonic Mode"
-             polyphonicMode = true
+            polyphonicMode = true
             
         }
     }
     
+    //Hide iPhone X+ home button
     override var prefersHomeIndicatorAutoHidden: Bool {
         return true
     }
+    
+    //Pass data to HomeviewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "HomeViewSegue" {
             
-          do {
+            do {
                 try AudioKit.stop()
             } catch {
                 AKLog("AudioKit did not stop!")
             }
-        let dest = segue.destination as! HomeViewController
+            let dest = segue.destination as! HomeViewController
             dest.att =  self.oscillator.attackDuration
             dest.dec =  self.oscillator.decayDuration
             dest.sus =  self.oscillator.sustainLevel
             dest.rel =  self.oscillator.releaseDuration
             dest.polyphonicMode = polyphonicMode 
-       
+            
         }
-       
-  
-    
-}
+        
+        
+        
+    }
 }
 
 

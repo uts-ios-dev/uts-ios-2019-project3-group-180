@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D355DDEB229843FE001E9526 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355DDEA229843FE001E9526 /* HelpViewController.swift */; };
 		DF3AD006228A3E8500F283D1 /* Conductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3AD005228A3E8500F283D1 /* Conductor.swift */; };
 		DF3AD008228A571800F283D1 /* sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3AD007228A571800F283D1 /* sequence.swift */; };
 		DF4D7A3D228E3DD4006BE82F /* digital-7-mono_[allfont.net].ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D7A3C228E3DD4006BE82F /* digital-7-mono_[allfont.net].ttf */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D355DDEA229843FE001E9526 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		DF3AD005228A3E8500F283D1 /* Conductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conductor.swift; sourceTree = "<group>"; };
 		DF3AD007228A571800F283D1 /* sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sequence.swift; sourceTree = "<group>"; };
 		DF4D7A3C228E3DD4006BE82F /* digital-7-mono_[allfont.net].ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7-mono_[allfont.net].ttf"; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				DF9CE41C228E2F8500F774B6 /* HomeViewController.swift */,
 				DFC2E2682288F7F400E71D3B /* ViewController.swift */,
 				DF4D7A3E228E4306006BE82F /* SettingViewController.swift */,
+				D355DDEA229843FE001E9526 /* HelpViewController.swift */,
 				DFC2E26A2288F7F400E71D3B /* Main.storyboard */,
 				DFC2E2702288F7F500E71D3B /* Assets.xcassets */,
 				DFC2E2722288F7F500E71D3B /* LaunchScreen.storyboard */,
@@ -275,6 +278,7 @@
 				DF3AD006228A3E8500F283D1 /* Conductor.swift in Sources */,
 				DFC2E2672288F7F400E71D3B /* AppDelegate.swift in Sources */,
 				DF4D7A3F228E4306006BE82F /* SettingViewController.swift in Sources */,
+				D355DDEB229843FE001E9526 /* HelpViewController.swift in Sources */,
 				DF3AD008228A571800F283D1 /* sequence.swift in Sources */,
 				DF9CE41D228E2F8500F774B6 /* HomeViewController.swift in Sources */,
 				DFC2E2812288FAB600E71D3B /* ScreenControl.swift in Sources */,

@@ -27,14 +27,17 @@ class HomeViewController: UIViewController {
         oscillator.sustainLevel  = sus
         oscillator.releaseDuration = rel
         super.viewDidLoad()
+        //load background video
         try? VideoBackground.shared.play(view: view, videoName: "Background", videoType: "mp4")
-        
         navigationController?.isNavigationBarHidden = true
         // Do any additional setup after loading the view.
     }
+    //Hide iPhone X+ home button
     override var prefersHomeIndicatorAutoHidden: Bool {
         return true
     }
+    
+    //pass data to ViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "PianoViewSegue" {
             let dest = segue.destination as! ViewController

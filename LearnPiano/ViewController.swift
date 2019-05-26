@@ -30,9 +30,8 @@ extension UIButton {
     }
 }
 class ViewController: UIViewController, AKKeyboardDelegate{
-   
+    
     @IBOutlet weak var bassBtn: UIButton!
-    //let conductor = Conductor()
     
     var drumTimer1 = Timer()
     var drumTimer2 = Timer()
@@ -58,14 +57,15 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     var closedPlayer = AVAudioPlayer()
     var openPlayer = AVAudioPlayer()
     
-    //need to change the values below
+    //Default piano settings
     var att = 0.1
     var dec = 0.1
     var sus = 0.5
     var rel = 0.1
     
+    //Bitwise operation for
     let b1Bit = 1
-    let b2Bit = 1 << 1 //
+    let b2Bit = 1 << 1
     let b3Bit = 1 << 2
     let b4Bit = 1 << 3
     let b5Bit = 1 << 4
@@ -78,13 +78,9 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     let b12Bit = 1 << 11
     
     var playeringFlag: Int = 0
-    
     var polyphonicMode = false
-    
-   
-    
     var isPlaying = false
-
+    
     
     @IBOutlet weak var drum1: UIButton!
     @IBOutlet weak var drum2: UIButton!
@@ -104,8 +100,10 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     @IBOutlet weak var open1: UIButton!
     
     override func viewDidLoad() {
-       
+        
         super.viewDidLoad()
+        
+        //from Setting
         oscillator.attackDuration = att
         oscillator.decayDuration = dec
         oscillator.sustainLevel  = sus
@@ -115,13 +113,13 @@ class ViewController: UIViewController, AKKeyboardDelegate{
         
         do {
             try AudioKit.start()
-        
+            
         } catch {
             AKLog("AudioKit did not start!")
         }
         //Audiobus.start()
-    
-    
+        
+        
         loadKeyboard()
         
         let sound = Bundle.main.path(forResource: "kickDrum", ofType: "wav")
@@ -134,42 +132,35 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             closedPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound3!))
             openPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound4!))
             
-           
+            
         }catch{
             print("Error")
         }
         
     }
     
+    // Hide iPhone X+ home button
     override var prefersHomeIndicatorAutoHidden: Bool {
         return true
     }
     
+    //Set up piano keyboard
     func loadKeyboard() {
-
+        
         let keyboardView = AKKeyboardView(frame: ScreenControl.manageSize(rect: CGRect(x: 0, y:200, width: 800, height: 250)))
         keyboardView.polyphonicMode = polyphonicMode
         keyboardView.delegate = self
         
         self.view.addSubview(keyboardView)
     }
-
+    
     func noteOn(note: MIDINoteNumber) {
-         oscillator.play(noteNumber: note, velocity: 100)
+        oscillator.play(noteNumber: note, velocity: 100)
     }
     
     func noteOff(note: MIDINoteNumber) {
-         oscillator.stop(noteNumber: note)
+        oscillator.stop(noteNumber: note)
     }
-    
-    @IBAction func bassAction(_ sender: Any) {
-        //conductor.generateBassDrumSequence(2)
-        
-    }
-    
-    
-    
-    
     
     
     @IBAction func open3(_ sender: Any) {
@@ -324,7 +315,8 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     }
     
     @IBAction func snare3(_ sender: Any) {
-        playeringFlag ^= b6Bit //
+        
+        playeringFlag ^= b6Bit
         print("d3 is pressed")
         if  playeringFlag&b6Bit == 0{
             print("drum 4 is not playing")
@@ -381,7 +373,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
         print("d3 is pressed")
         if  playeringFlag&b4Bit == 0{
             print("drum 4 is not playing")
-           snarePlayer.stop()
+            snarePlayer.stop()
             self.snareTimer1.invalidate()
             self.snare1.blink(enabled:false)
             self.snare1.backgroundColor = #colorLiteral(red: 1, green: 0.4952963591, blue: 0.791751802, alpha: 1)
@@ -405,11 +397,11 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     
     @IBAction func drum3(_ sender: Any) {
         
-            playeringFlag ^= b3Bit //
-           print("d3 is pressed")
+        playeringFlag ^= b3Bit //
+        print("d3 is pressed")
         if  playeringFlag&b3Bit == 0{
             print("drum 3 is not playing")
-             drumPlayer.stop()
+            drumPlayer.stop()
             self.drumTimer3.invalidate()
             self.drum3.blink(enabled:false)
             self.drum3.backgroundColor = #colorLiteral(red: 1, green: 0.7653519511, blue: 0.1869229376, alpha: 1)
@@ -433,7 +425,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     @IBAction func drum2(_ sender: Any) {
         
         
-            playeringFlag ^= b2Bit //
+        playeringFlag ^= b2Bit //
         print("d2 is pressed")
         
         if  playeringFlag&b2Bit == 0{
@@ -457,13 +449,13 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             drum1.isEnabled = false
             drum3.isEnabled = false
         }
-       
+        
     }
     
     
     @IBAction func drum1(_ sender: Any) {
         
-           playeringFlag ^= b1Bit //
+        playeringFlag ^= b1Bit //
         if playeringFlag&b1Bit == 0 {
             print("stop1")
             drumPlayer.stop()
@@ -473,34 +465,34 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             self.drum1.backgroundColor = #colorLiteral(red: 1, green: 0.7653519511, blue: 0.1869229376, alpha: 1)
             drum2.isEnabled = true
             drum3.isEnabled = true
-           
+            
         }else{
             
             self.drumTimer1 = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer) in
                 self.drumPlayer.play()
                 print("play1")
-              })
+            })
             self.drum1.backgroundColor = #colorLiteral(red: 1, green: 0.881786045, blue: 0, alpha: 1)
             self.drum1.blink()
             drum2.isEnabled = false
             drum3.isEnabled = false
             
         }
-       
-       
+        
+        
         
     }
     
-   
+    
     
     @IBAction func stopAll(_ sender: Any) {
-          print("pressed")
-
-       
+        print("pressed")
         
-           stopAll()
         
-            print("stoped")
+        
+        stopAll()
+        
+        print("stoped")
         
         
     }
@@ -524,91 +516,18 @@ class ViewController: UIViewController, AKKeyboardDelegate{
         openTimer3.invalidate()
         
     }
-   
+    
     override func viewWillDisappear(_ animated: Bool) {
-       
+        
         do{
             stopAll()
             try AudioKit.stop()
-        
+            
         }catch{
             print("AudioKit doesnt stop!")
         }
         
-    
+        
     }
 }
-
-
-/*
-import AudioKit
-import UIKit
-import AudioKitUI
-class ViewController: UIViewController, AKKeyboardDelegate {
-    
-    let oscillator = AKOscillatorBank()
-    var transportView: CAInterAppAudioTransportView?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        AudioKit.output = oscillator
-        do {
-            try AudioKit.start()
-        } catch {
-            AKLog("AudioKit did not start!")
-        }
-        //Audiobus.start()
-        
-        setupUI()
-    }
-    
-    func setupUI() {
-        let stackView = UIStackView()
-        stackView.axis = .vertical
-        stackView.distribution = .fillEqually
-        stackView.alignment = .fill
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        
-        let adsrView = AKADSRView { att, dec, sus, rel in
-            self.oscillator.attackDuration = att
-            self.oscillator.decayDuration = dec
-            self.oscillator.sustainLevel = sus
-            self.oscillator.releaseDuration = rel
-        }
-        
-        stackView.addArrangedSubview(adsrView)
-        let keyboardView = AKKeyboardView(frame: ScreenControl.manageSize(rect: CGRect(x: 0, y:200, width: 800, height: 250)))
-        keyboardView.polyphonicMode = true
-        keyboardView.delegate = self
-        
-        stackView.addArrangedSubview(keyboardView)
-        
-        let rect = CGRect(x: 0, y: 0, width: 300, height: 20)
-        transportView = CAInterAppAudioTransportView(frame: rect)
-        transportView?.setOutputAudioUnit(AudioKit.engine.outputNode.audioUnit!)
-        
-        stackView.addArrangedSubview(transportView!)
-        
-        view.addSubview(stackView)
-        
-        stackView.widthAnchor.constraint(equalToConstant: view.frame.width).isActive = true
-        stackView.heightAnchor.constraint(equalToConstant: view.frame.height).isActive = true
-        
-        stackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
-    }
-    
-    func noteOn(note: MIDINoteNumber) {
-        oscillator.play(noteNumber: note, velocity: 64)
-    }
-    
-    func noteOff(note: MIDINoteNumber) {
-        oscillator.stop(noteNumber: note)
-    }
-    @IBAction func bassAction(_ sender: Any) {
-        //conductor.generateBassDrumSequence(2)
-        
-    }
-}*/
 
