@@ -4,7 +4,8 @@
 //
 //  Created by Yizhe CHEN on 2019/5/17.
 //
-
+// Setting page to control the attackDuration
+//Setting page to control the DecayDuration
 import AudioKit
 import UIKit
 import AudioKitUI
