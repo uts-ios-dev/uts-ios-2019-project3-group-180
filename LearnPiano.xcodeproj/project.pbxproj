@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D355DDEB229843FE001E9526 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355DDEA229843FE001E9526 /* HelpViewController.swift */; };
+		D37BFE0D229BE71300D287A0 /* piano screen.png in Resources */ = {isa = PBXBuildFile; fileRef = D37BFE0B229BE71300D287A0 /* piano screen.png */; };
+		D37BFE0E229BE71300D287A0 /* setting screen.png in Resources */ = {isa = PBXBuildFile; fileRef = D37BFE0C229BE71300D287A0 /* setting screen.png */; };
+		D37BFE10229BE7F200D287A0 /* help scene.png in Resources */ = {isa = PBXBuildFile; fileRef = D37BFE0F229BE7F100D287A0 /* help scene.png */; };
+		D37BFE12229BEE1C00D287A0 /* install frame work.gif in Resources */ = {isa = PBXBuildFile; fileRef = D37BFE11229BEE1C00D287A0 /* install frame work.gif */; };
 		DF3AD006228A3E8500F283D1 /* Conductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3AD005228A3E8500F283D1 /* Conductor.swift */; };
 		DF3AD008228A571800F283D1 /* sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3AD007228A571800F283D1 /* sequence.swift */; };
 		DF4D7A3D228E3DD4006BE82F /* digital-7-mono_[allfont.net].ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D7A3C228E3DD4006BE82F /* digital-7-mono_[allfont.net].ttf */; };
@@ -39,6 +43,11 @@
 
 /* Begin PBXFileReference section */
 		D355DDEA229843FE001E9526 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		D37BFE09229BE6C100D287A0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D37BFE0B229BE71300D287A0 /* piano screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piano screen.png"; sourceTree = "<group>"; };
+		D37BFE0C229BE71300D287A0 /* setting screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting screen.png"; sourceTree = "<group>"; };
+		D37BFE0F229BE7F100D287A0 /* help scene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help scene.png"; sourceTree = "<group>"; };
+		D37BFE11229BEE1C00D287A0 /* install frame work.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "install frame work.gif"; sourceTree = "<group>"; };
 		DF3AD005228A3E8500F283D1 /* Conductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conductor.swift; sourceTree = "<group>"; };
 		DF3AD007228A571800F283D1 /* sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sequence.swift; sourceTree = "<group>"; };
 		DF4D7A3C228E3DD4006BE82F /* digital-7-mono_[allfont.net].ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7-mono_[allfont.net].ttf"; sourceTree = "<group>"; };
@@ -83,6 +92,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D37BFE0A229BE6F200D287A0 /* readMeImages */ = {
+			isa = PBXGroup;
+			children = (
+				D37BFE0B229BE71300D287A0 /* piano screen.png */,
+				D37BFE0C229BE71300D287A0 /* setting screen.png */,
+				D37BFE0F229BE7F100D287A0 /* help scene.png */,
+				D37BFE11229BEE1C00D287A0 /* install frame work.gif */,
+			);
+			path = readMeImages;
+			sourceTree = "<group>";
+		};
 		DF4D7A40228E4317006BE82F /* Background */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +155,8 @@
 		DFC2E25A2288F7F400E71D3B = {
 			isa = PBXGroup;
 			children = (
+				D37BFE0A229BE6F200D287A0 /* readMeImages */,
+				D37BFE09229BE6C100D287A0 /* README.md */,
 				DFC2E2652288F7F400E71D3B /* LearnPiano */,
 				DFC2E2642288F7F400E71D3B /* Products */,
 				DFC2E27B2288FA2100E71D3B /* Frameworks */,
@@ -250,17 +272,21 @@
 				DF4D7A3D228E3DD4006BE82F /* digital-7-mono_[allfont.net].ttf in Resources */,
 				DFB1BF9522928CA30083EE24 /* open_hi_hat_A#1.wav in Resources */,
 				DFB1BF9322928CA30083EE24 /* mid_tom_B1.wav in Resources */,
+				D37BFE0E229BE71300D287A0 /* setting screen.png in Resources */,
 				DFB1BF9222928CA30083EE24 /* closed_hi_hat_F#1.wav in Resources */,
 				DFB1BF9622928CA30083EE24 /* clap_D#1.wav in Resources */,
 				DFC2E2742288F7F500E71D3B /* LaunchScreen.storyboard in Resources */,
 				DF9CE425228E329700F774B6 /* Background.mp4 in Resources */,
+				D37BFE10229BE7F200D287A0 /* help scene.png in Resources */,
 				DFB1BF9422928CA30083EE24 /* bass_drum_C1.wav in Resources */,
 				DFB1BF9722928CA30083EE24 /* hi_tom_D2.wav in Resources */,
 				DFC2E2712288F7F500E71D3B /* Assets.xcassets in Resources */,
 				DFB1BF822292838F0083EE24 /* kickDrum.wav in Resources */,
 				DFB1BF9122928CA30083EE24 /* snare_D1.wav in Resources */,
 				DFC2E26C2288F7F400E71D3B /* Main.storyboard in Resources */,
+				D37BFE0D229BE71300D287A0 /* piano screen.png in Resources */,
 				DFB1BF9022928CA30083EE24 /* lo_tom_F1.wav in Resources */,
+				D37BFE12229BEE1C00D287A0 /* install frame work.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
