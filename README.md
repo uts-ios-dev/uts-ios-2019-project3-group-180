@@ -10,7 +10,7 @@ Yizhe Chen - 12670131
 
 ## Description 
 
-Learn piano, is a keyboard app for musicians who are away from home and want to convenient test a melody that they have thought of. 
+Learn piano, is a keyboard app for musicians who are away from home and want to conveniently test a melody that they have thought of. 
 
 <kbd>
     <img src="readMeImages/piano screen.png"/>
@@ -49,17 +49,25 @@ The settings also includes a Polyphonic/Monophonic switch, which determines whet
 
 If the user does not understand how to use the app, there is a help scene that they can look at to help them understand the app.
 
-## Installing
+## Getting Started
+
+### Prerequisites
+
+1. Swift 5
+2. AudioKit, AudioKitUI
+
+### Installing
 
 To install this and run this appplication:
 
 1. FIRSTLY - Make sure you have Swift 5, if not, then update Xcode to the latest version.
-2. Click this link to download the AudioKit and AudioKitUI frameworks http://github.com/audiokit/AudioKit/releases/download/v4.7.2/AudioKit-iOS-4.7.2.zip
-3. After downloading, unzip and open the file.
-4. After opening the folder, the two frameworks should be there. Move the two frameworks into the Learn Piano project folder like below.
+2. Download and open this project folder
+3. Click this link to download the AudioKit and AudioKitUI frameworks http://github.com/audiokit/AudioKit/releases/download/v4.7.2/AudioKit-iOS-4.7.2.zip
+4. After downloading, unzip and open the file.
+5. After opening the folder, the two frameworks should be there. Move the two frameworks into the Learn Piano project folder like below.
 
 <kbd>
     <img src="readMeImages/install frame work.gif"/>
 </kbd>
 
-5. The applcation should be able to run after these steps.
+6. The applcation should be able to run after these steps.
