@@ -15,6 +15,8 @@ class HelpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Allows the text to automatically create line breaks so that it fits in its area
+        // 0 number of lines allows the text to dynamically add new lines to the text to fit line breaks
         pianoHelpLabel.lineBreakMode = .byWordWrapping
         pianoHelpLabel.numberOfLines = 0
         pianoHelpLabel.text = "Press the keys at the bottom of the screen to play notes.\n\nPress the pads at the top to enable drum loops.\n1/4 - plays 4 times in a given moment.\n1/2 - plays 2 times in a given moment.\n1 - plays 1 time in a given moment.\n\nPress record begin recording and press again to end recording.\nPress play to play the recording.\nPress delete to delete the recording."

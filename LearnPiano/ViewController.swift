@@ -127,10 +127,10 @@ class ViewController: UIViewController, AKKeyboardDelegate{
         
         loadKeyboard()
         
-        let sound = Bundle.main.path(forResource: "kickDrum", ofType: "wav")
-        let sound2 = Bundle.main.path(forResource: "snare_D1", ofType: "wav")
-        let sound3 = Bundle.main.path(forResource: "closed_hi_hat_F#1", ofType: "wav")
-        let sound4 = Bundle.main.path(forResource: "open_hi_hat_A#1", ofType: "wav")
+        let sound = Bundle.main.path(forResource: "kick", ofType: "wav")
+        let sound2 = Bundle.main.path(forResource: "snare", ofType: "wav")
+        let sound3 = Bundle.main.path(forResource: "hiHat", ofType: "wav")
+        let sound4 = Bundle.main.path(forResource: "openHiHat", ofType: "wav")
         do{
             drumPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
             snarePlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound2!))
@@ -182,7 +182,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
         }else{
             
-            self.openTimer3 = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true, block: { (timer1) in
+            self.openTimer3 = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { (timer1) in
                 self.openPlayer.play()
                 print("play3")
             })
@@ -207,7 +207,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
         }else{
             
-            self.openTimer2 = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { (timer1) in
+            self.openTimer2 = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer1) in
                 self.openPlayer.play()
                 print("play3")
             })
@@ -232,7 +232,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
         }else{
             
-            self.openTimer1 = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer1) in
+            self.openTimer1 = Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: { (timer1) in
                 self.openPlayer.play()
                 print("play3")
             })
@@ -257,7 +257,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
         }else{
             
-            self.closedTimer3 = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true, block: { (timer1) in
+            self.closedTimer3 = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { (timer1) in
                 self.closedPlayer.play()
                 print("play3")
             })
@@ -282,7 +282,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
         }else{
             
-            self.closedTimer2 = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { (timer1) in
+            self.closedTimer2 = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer1) in
                 self.closedPlayer.play()
                 print("play3")
             })
@@ -307,7 +307,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
         }else{
             
-            self.closedTimer1 = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer1) in
+            self.closedTimer1 = Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: { (timer1) in
                 self.closedPlayer.play()
                 print("play3")
             })
@@ -334,7 +334,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
         }else{
             
-            self.snareTimer3 = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true, block: { (timer1) in
+            self.snareTimer3 = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { (timer1) in
                 self.snarePlayer.play()
                 print("play3")
             })
@@ -360,7 +360,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
         }else{
             
-            self.snareTimer2 = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { (timer1) in
+            self.snareTimer2 = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer1) in
                 self.snarePlayer.play()
                 print("play3")
             })
@@ -387,7 +387,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
         }else{
             
-            self.snareTimer1 = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer1) in
+            self.snareTimer1 = Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: { (timer1) in
                 self.snarePlayer.play()
                 print("play3")
             })
@@ -415,7 +415,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
         }else{
             
-            self.drumTimer3 = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true, block: { (timer1) in
+            self.drumTimer3 = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { (timer1) in
                 self.drumPlayer.play()
                 print("play3")
             })
@@ -442,7 +442,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
         }else{
             
-            self.drumTimer2 = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { (timer1) in
+            self.drumTimer2 = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer1) in
                 self.drumPlayer.play()
                 print("play2")
             })
@@ -467,7 +467,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
         }else{
             
-            self.drumTimer1 = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer) in
+            self.drumTimer1 = Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: { (timer1) in
                 self.drumPlayer.play()
                 print("play1")
             })

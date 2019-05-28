@@ -12,6 +12,8 @@ Yizhe Chen - 12670131
 
 Learn piano, is a keyboard app for musicians who are away from home and want to conveniently test a melody that they have thought of. 
 
+### Keyboard Scene
+
 <kbd>
     <img src="readMeImages/piano screen.png"/>
 </kbd>
@@ -30,6 +32,8 @@ There is also a recording function in the keyboard scene where the user can:
 - Playback what they have recorded by pressing the Play button.
 - Delete what they have recorded by pressing the delete button.
 
+### Settings Scene
+
 <kbd>
     <img src="readMeImages/setting screen.png"/>
 </kbd>
@@ -42,6 +46,8 @@ The piano's output can be modified in the settings scene through its:
 - Relase - Which is the time taken for the volume to drop to nil after releasing the key.
 
 The settings also includes a Polyphonic/Monophonic switch, which determines whether the user wants to play multiple keys at a time or one respectively.
+
+### Help Scene
 
 <kbd>
     <img src="readMeImages/help scene.png"/>

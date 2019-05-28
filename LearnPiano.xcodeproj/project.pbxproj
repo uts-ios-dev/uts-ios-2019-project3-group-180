@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D33C1AB7229D127700388C38 /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = D33C1AB4229D127600388C38 /* kick.wav */; };
+		D33C1AB8229D127700388C38 /* snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = D33C1AB5229D127700388C38 /* snare.wav */; };
+		D33C1AB9229D127700388C38 /* hiHat.wav in Resources */ = {isa = PBXBuildFile; fileRef = D33C1AB6229D127700388C38 /* hiHat.wav */; };
+		D33C1ABD229D1A3000388C38 /* openHiHat.wav in Resources */ = {isa = PBXBuildFile; fileRef = D33C1ABC229D1A3000388C38 /* openHiHat.wav */; };
 		D355DDEB229843FE001E9526 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355DDEA229843FE001E9526 /* HelpViewController.swift */; };
 		D37BFE0D229BE71300D287A0 /* piano screen.png in Resources */ = {isa = PBXBuildFile; fileRef = D37BFE0B229BE71300D287A0 /* piano screen.png */; };
 		D37BFE0E229BE71300D287A0 /* setting screen.png in Resources */ = {isa = PBXBuildFile; fileRef = D37BFE0C229BE71300D287A0 /* setting screen.png */; };
@@ -20,14 +24,10 @@
 		DF9CE421228E30C100F774B6 /* VideoBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CE420228E30C100F774B6 /* VideoBackground.swift */; };
 		DF9CE423228E30F900F774B6 /* ErrorHanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CE422228E30F900F774B6 /* ErrorHanding.swift */; };
 		DF9CE425228E329700F774B6 /* Background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DF9CE424228E329700F774B6 /* Background.mp4 */; };
-		DFB1BF822292838F0083EE24 /* kickDrum.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF812292838F0083EE24 /* kickDrum.wav */; };
 		DFB1BF85229285C10083EE24 /* PlaySounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB1BF84229285C10083EE24 /* PlaySounds.swift */; };
 		DFB1BF9022928CA30083EE24 /* lo_tom_F1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8822928CA20083EE24 /* lo_tom_F1.wav */; };
-		DFB1BF9122928CA30083EE24 /* snare_D1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8922928CA20083EE24 /* snare_D1.wav */; };
-		DFB1BF9222928CA30083EE24 /* closed_hi_hat_F#1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8A22928CA20083EE24 /* closed_hi_hat_F#1.wav */; };
 		DFB1BF9322928CA30083EE24 /* mid_tom_B1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8B22928CA20083EE24 /* mid_tom_B1.wav */; };
 		DFB1BF9422928CA30083EE24 /* bass_drum_C1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8C22928CA30083EE24 /* bass_drum_C1.wav */; };
-		DFB1BF9522928CA30083EE24 /* open_hi_hat_A#1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8D22928CA30083EE24 /* open_hi_hat_A#1.wav */; };
 		DFB1BF9622928CA30083EE24 /* clap_D#1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8E22928CA30083EE24 /* clap_D#1.wav */; };
 		DFB1BF9722928CA30083EE24 /* hi_tom_D2.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8F22928CA30083EE24 /* hi_tom_D2.wav */; };
 		DFC2E2672288F7F400E71D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2E2662288F7F400E71D3B /* AppDelegate.swift */; };
@@ -42,6 +42,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D33C1AB4229D127600388C38 /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kick.wav; sourceTree = "<group>"; };
+		D33C1AB5229D127700388C38 /* snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snare.wav; sourceTree = "<group>"; };
+		D33C1AB6229D127700388C38 /* hiHat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hiHat.wav; sourceTree = "<group>"; };
+		D33C1ABC229D1A3000388C38 /* openHiHat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = openHiHat.wav; sourceTree = "<group>"; };
 		D355DDEA229843FE001E9526 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		D37BFE09229BE6C100D287A0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D37BFE0B229BE71300D287A0 /* piano screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piano screen.png"; sourceTree = "<group>"; };
@@ -56,14 +60,10 @@
 		DF9CE420228E30C100F774B6 /* VideoBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoBackground.swift; sourceTree = "<group>"; };
 		DF9CE422228E30F900F774B6 /* ErrorHanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHanding.swift; sourceTree = "<group>"; };
 		DF9CE424228E329700F774B6 /* Background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Background.mp4; sourceTree = "<group>"; };
-		DFB1BF812292838F0083EE24 /* kickDrum.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kickDrum.wav; sourceTree = "<group>"; };
 		DFB1BF84229285C10083EE24 /* PlaySounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySounds.swift; sourceTree = "<group>"; };
 		DFB1BF8822928CA20083EE24 /* lo_tom_F1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lo_tom_F1.wav; sourceTree = "<group>"; };
-		DFB1BF8922928CA20083EE24 /* snare_D1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snare_D1.wav; sourceTree = "<group>"; };
-		DFB1BF8A22928CA20083EE24 /* closed_hi_hat_F#1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "closed_hi_hat_F#1.wav"; sourceTree = "<group>"; };
 		DFB1BF8B22928CA20083EE24 /* mid_tom_B1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mid_tom_B1.wav; sourceTree = "<group>"; };
 		DFB1BF8C22928CA30083EE24 /* bass_drum_C1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass_drum_C1.wav; sourceTree = "<group>"; };
-		DFB1BF8D22928CA30083EE24 /* open_hi_hat_A#1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "open_hi_hat_A#1.wav"; sourceTree = "<group>"; };
 		DFB1BF8E22928CA30083EE24 /* clap_D#1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "clap_D#1.wav"; sourceTree = "<group>"; };
 		DFB1BF8F22928CA30083EE24 /* hi_tom_D2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hi_tom_D2.wav; sourceTree = "<group>"; };
 		DFC2E2632288F7F400E71D3B /* LearnPiano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnPiano.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,10 +124,10 @@
 		DFB1BF83229283930083EE24 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				DFB1BF8D22928CA30083EE24 /* open_hi_hat_A#1.wav */,
-				DFB1BF8A22928CA20083EE24 /* closed_hi_hat_F#1.wav */,
-				DFB1BF8922928CA20083EE24 /* snare_D1.wav */,
-				DFB1BF812292838F0083EE24 /* kickDrum.wav */,
+				D33C1AB6229D127700388C38 /* hiHat.wav */,
+				D33C1AB4229D127600388C38 /* kick.wav */,
+				D33C1AB5229D127700388C38 /* snare.wav */,
+				D33C1ABC229D1A3000388C38 /* openHiHat.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -270,23 +270,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF4D7A3D228E3DD4006BE82F /* digital-7-mono_[allfont.net].ttf in Resources */,
-				DFB1BF9522928CA30083EE24 /* open_hi_hat_A#1.wav in Resources */,
 				DFB1BF9322928CA30083EE24 /* mid_tom_B1.wav in Resources */,
 				D37BFE0E229BE71300D287A0 /* setting screen.png in Resources */,
-				DFB1BF9222928CA30083EE24 /* closed_hi_hat_F#1.wav in Resources */,
 				DFB1BF9622928CA30083EE24 /* clap_D#1.wav in Resources */,
 				DFC2E2742288F7F500E71D3B /* LaunchScreen.storyboard in Resources */,
 				DF9CE425228E329700F774B6 /* Background.mp4 in Resources */,
 				D37BFE10229BE7F200D287A0 /* help scene.png in Resources */,
 				DFB1BF9422928CA30083EE24 /* bass_drum_C1.wav in Resources */,
+				D33C1AB7229D127700388C38 /* kick.wav in Resources */,
 				DFB1BF9722928CA30083EE24 /* hi_tom_D2.wav in Resources */,
 				DFC2E2712288F7F500E71D3B /* Assets.xcassets in Resources */,
-				DFB1BF822292838F0083EE24 /* kickDrum.wav in Resources */,
-				DFB1BF9122928CA30083EE24 /* snare_D1.wav in Resources */,
 				DFC2E26C2288F7F400E71D3B /* Main.storyboard in Resources */,
+				D33C1AB9229D127700388C38 /* hiHat.wav in Resources */,
 				D37BFE0D229BE71300D287A0 /* piano screen.png in Resources */,
 				DFB1BF9022928CA30083EE24 /* lo_tom_F1.wav in Resources */,
+				D33C1AB8229D127700388C38 /* snare.wav in Resources */,
 				D37BFE12229BEE1C00D287A0 /* install frame work.gif in Resources */,
+				D33C1ABD229D1A3000388C38 /* openHiHat.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
