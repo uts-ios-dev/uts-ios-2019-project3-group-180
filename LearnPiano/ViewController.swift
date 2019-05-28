@@ -12,6 +12,7 @@ import UIKit
 import AudioKitUI
 import AVFoundation
 
+// Instruments button animation
 extension UIButton {
     open override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
         return self.bounds.contains(point) ? self : nil
@@ -33,21 +34,21 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     
     @IBOutlet weak var bassBtn: UIButton!
     
-    var drumTimer1 = Timer()
-    var drumTimer2 = Timer()
-    var drumTimer3 = Timer()
+    var drumTimer1 = Timer() //drum 1
+    var drumTimer2 = Timer() //drum 1/2
+    var drumTimer3 = Timer() //drum 1/4
     
-    var snareTimer1 = Timer()
-    var snareTimer2 = Timer()
-    var snareTimer3 = Timer()
+    var snareTimer1 = Timer() //snare 1
+    var snareTimer2 = Timer() //snare 1/2
+    var snareTimer3 = Timer() //snare 1/4
     
-    var closedTimer1 = Timer()
-    var closedTimer2 = Timer()
-    var closedTimer3 = Timer()
+    var closedTimer1 = Timer() //Closed-Hight 1
+    var closedTimer2 = Timer() //Closed-Hight 1/2
+    var closedTimer3 = Timer() //Closed-Hight 1/4
     
-    var openTimer1 = Timer()
-    var openTimer2 = Timer()
-    var openTimer3 = Timer()
+    var openTimer1 = Timer() //Opened-Hight 1
+    var openTimer2 = Timer() //Opened-Hight 1/2
+    var openTimer3 = Timer() //Opened-Hight 1/4
     
     
     
@@ -63,7 +64,11 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     var sus = 0.5
     var rel = 0.1
     
-    //Bitwise operation for
+    //Bitwise operation for stopping and starting at the same button
+    /*
+     The bitwise AND operator (&) combines the bits of two numbers. It returns a new number whose bits are set to 1 only if the bits were equal to 1 in both input numbers:*/
+    
+    /*The bitwise XOR operator, or “exclusive OR operator” (^), compares the bits of two numbers. The operator returns a new number whose bits are set to 1 where the input bits are different and are set to 0 where the input bits are the same*/
     let b1Bit = 1
     let b2Bit = 1 << 1
     let b3Bit = 1 << 2
@@ -76,28 +81,29 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     let b10Bit = 1 << 9
     let b11Bit = 1 << 10
     let b12Bit = 1 << 11
+   
     
     var playeringFlag: Int = 0
     var polyphonicMode = false
     var isPlaying = false
     
     
-    @IBOutlet weak var drum1: UIButton!
-    @IBOutlet weak var drum2: UIButton!
-    @IBOutlet weak var drum3: UIButton!
+    @IBOutlet weak var drum1: UIButton!  //drum 1
+    @IBOutlet weak var drum2: UIButton!  //drum 1/2
+    @IBOutlet weak var drum3: UIButton!  //drum 1/4
     
-    @IBOutlet weak var snare3: UIButton!
-    @IBOutlet weak var snare2: UIButton!
-    @IBOutlet weak var snare1: UIButton!
+    @IBOutlet weak var snare3: UIButton!  //Snare 1/4
+    @IBOutlet weak var snare2: UIButton!  //Snare 1/2
+    @IBOutlet weak var snare1: UIButton!  //Snare 1
     
-    @IBOutlet weak var closed3: UIButton!
-    @IBOutlet weak var closed2: UIButton!
-    @IBOutlet weak var closed1: UIButton!
+    @IBOutlet weak var closed3: UIButton! //Closed-Hight 1/4
+    @IBOutlet weak var closed2: UIButton! //Closed-Hight 1/2
+    @IBOutlet weak var closed1: UIButton! //Closed-Hight 1
     
     
-    @IBOutlet weak var open3: UIButton!
-    @IBOutlet weak var open2: UIButton!
-    @IBOutlet weak var open1: UIButton!
+    @IBOutlet weak var open3: UIButton! //Open-Hight 1/4
+    @IBOutlet weak var open2: UIButton! //Open-Hight 1/2
+    @IBOutlet weak var open1: UIButton! //Open-Hight 1
     
     override func viewDidLoad() {
         
@@ -117,7 +123,6 @@ class ViewController: UIViewController, AKKeyboardDelegate{
         } catch {
             AKLog("AudioKit did not start!")
         }
-        //Audiobus.start()
         
         
         loadKeyboard()
@@ -397,10 +402,10 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     
     @IBAction func drum3(_ sender: Any) {
         
-        playeringFlag ^= b3Bit //
-        print("d3 is pressed")
+        playeringFlag ^= b3Bit
+        
         if  playeringFlag&b3Bit == 0{
-            print("drum 3 is not playing")
+        
             drumPlayer.stop()
             self.drumTimer3.invalidate()
             self.drum3.blink(enabled:false)
@@ -424,12 +429,9 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     
     @IBAction func drum2(_ sender: Any) {
         
-        
-        playeringFlag ^= b2Bit //
-        print("d2 is pressed")
+        playeringFlag ^= b2Bit
         
         if  playeringFlag&b2Bit == 0{
-            print("drum 2 is not playing")
             drumPlayer.stop()
             
             self.drumTimer2.invalidate()
@@ -452,14 +454,11 @@ class ViewController: UIViewController, AKKeyboardDelegate{
         
     }
     
-    
     @IBAction func drum1(_ sender: Any) {
         
-        playeringFlag ^= b1Bit //
+        playeringFlag ^= b1Bit
         if playeringFlag&b1Bit == 0 {
-            print("stop1")
             drumPlayer.stop()
-            
             self.drumTimer1.invalidate()
             self.drum1.blink(enabled:false)
             self.drum1.backgroundColor = #colorLiteral(red: 1, green: 0.7653519511, blue: 0.1869229376, alpha: 1)
@@ -478,23 +477,12 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             drum3.isEnabled = false
             
         }
-        
-        
-        
     }
     
     
     
     @IBAction func stopAll(_ sender: Any) {
-        print("pressed")
-        
-        
-        
         stopAll()
-        
-        print("stoped")
-        
-        
     }
     
     func stopAll(){
