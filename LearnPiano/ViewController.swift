@@ -360,7 +360,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
         }else{
             
-            self.snareTimer2 = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true, block: { (timer1) in
+            self.snareTimer2 = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { (timer1) in
                 self.snarePlayer.play()
                 print("play3")
             })
@@ -387,7 +387,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
         }else{
             
-            self.snareTimer1 = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true, block: { (timer1) in
+            self.snareTimer1 = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer1) in
                 self.snarePlayer.play()
                 print("play3")
             })
