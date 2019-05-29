@@ -26,12 +26,6 @@ On the keyboard scene, there are also looping drum pads that the user can enable
 - 1/2 - Which means the instrument should play 2 times in a given moment (2 half notes in a bar)
 - 1 - Whichi means the instument should play 1 time in a a given moment (1 whole note in a bar)
 
-There is also a recording function in the keyboard scene where the user can:
-
-- Record what they are playing by pressing the Record button and pressing again to end the recording.
-- Playback what they have recorded by pressing the Play button.
-- Delete what they have recorded by pressing the delete button.
-
 ### Settings Scene
 
 <kbd>
