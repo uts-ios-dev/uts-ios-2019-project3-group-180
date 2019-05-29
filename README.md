@@ -18,6 +18,7 @@ Learn piano, is a keyboard app for musicians who are away from home and want to 
     <img src="readMeImages/piano screen.png"/>
 </kbd>
 
+
 On the bottom half of the keyboard scene, there is a playable piano with 24 keys that you can play by tapping on the keys.
 
 On the keyboard scene, there are also looping drum pads that the user can enable to play. On each percussive instrument, there are three buttons with different labels:
@@ -32,6 +33,7 @@ On the keyboard scene, there are also looping drum pads that the user can enable
     <img src="readMeImages/setting screen.png"/>
 </kbd>
 
+
 The piano's output can be modified in the settings scene through its:
 
 - Attack - Which is the time taken for the ouput volume to reach from nil to peak.  
@@ -44,8 +46,9 @@ The settings also includes a Polyphonic/Monophonic switch, which determines whet
 ### Help Scene
 
 <kbd>
-    <img src="readMeImages/help scene.png"/>
+    <img src="readMeImages/help screen.png"/>
 </kbd>
+
 
 If the user does not understand how to use the app, there is a help scene that they can look at to help them understand the app.
 

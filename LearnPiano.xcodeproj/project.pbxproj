@@ -15,7 +15,7 @@
 		D37BFE0E229BE71300D287A0 /* setting screen.png in Resources */ = {isa = PBXBuildFile; fileRef = D37BFE0C229BE71300D287A0 /* setting screen.png */; };
 		D37BFE12229BEE1C00D287A0 /* install frame work.gif in Resources */ = {isa = PBXBuildFile; fileRef = D37BFE11229BEE1C00D287A0 /* install frame work.gif */; };
 		D3AD35B5229E41ED003C1BD0 /* piano screen.png in Resources */ = {isa = PBXBuildFile; fileRef = D3AD35B4229E41ED003C1BD0 /* piano screen.png */; };
-		D3D45C3D229E45BC00FC67CD /* help scene.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D45C3C229E45BC00FC67CD /* help scene.png */; };
+		D3E940F6229E46C40080E837 /* help screen.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E940F5229E46C40080E837 /* help screen.png */; };
 		DF3AD006228A3E8500F283D1 /* Conductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3AD005228A3E8500F283D1 /* Conductor.swift */; };
 		DF3AD008228A571800F283D1 /* sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3AD007228A571800F283D1 /* sequence.swift */; };
 		DF4D7A3D228E3DD4006BE82F /* digital-7-mono_[allfont.net].ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D7A3C228E3DD4006BE82F /* digital-7-mono_[allfont.net].ttf */; };
@@ -51,7 +51,7 @@
 		D37BFE0C229BE71300D287A0 /* setting screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting screen.png"; sourceTree = "<group>"; };
 		D37BFE11229BEE1C00D287A0 /* install frame work.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "install frame work.gif"; sourceTree = "<group>"; };
 		D3AD35B4229E41ED003C1BD0 /* piano screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piano screen.png"; sourceTree = "<group>"; };
-		D3D45C3C229E45BC00FC67CD /* help scene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help scene.png"; sourceTree = "<group>"; };
+		D3E940F5229E46C40080E837 /* help screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help screen.png"; sourceTree = "<group>"; };
 		DF3AD005228A3E8500F283D1 /* Conductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conductor.swift; sourceTree = "<group>"; };
 		DF3AD007228A571800F283D1 /* sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sequence.swift; sourceTree = "<group>"; };
 		DF4D7A3C228E3DD4006BE82F /* digital-7-mono_[allfont.net].ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7-mono_[allfont.net].ttf"; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 			children = (
 				D37BFE0C229BE71300D287A0 /* setting screen.png */,
 				D37BFE11229BEE1C00D287A0 /* install frame work.gif */,
-				D3D45C3C229E45BC00FC67CD /* help scene.png */,
+				D3E940F5229E46C40080E837 /* help screen.png */,
 				D3AD35B4229E41ED003C1BD0 /* piano screen.png */,
 			);
 			path = readMeImages;
@@ -276,12 +276,12 @@
 				DFC2E2742288F7F500E71D3B /* LaunchScreen.storyboard in Resources */,
 				DF9CE425228E329700F774B6 /* Background.mp4 in Resources */,
 				DFB1BF9422928CA30083EE24 /* bass_drum_C1.wav in Resources */,
+				D3E940F6229E46C40080E837 /* help screen.png in Resources */,
 				D33C1AB7229D127700388C38 /* kick.wav in Resources */,
 				DFB1BF9722928CA30083EE24 /* hi_tom_D2.wav in Resources */,
 				D3AD35B5229E41ED003C1BD0 /* piano screen.png in Resources */,
 				DFC2E2712288F7F500E71D3B /* Assets.xcassets in Resources */,
 				DFC2E26C2288F7F400E71D3B /* Main.storyboard in Resources */,
-				D3D45C3D229E45BC00FC67CD /* help scene.png in Resources */,
 				D33C1AB9229D127700388C38 /* hiHat.wav in Resources */,
 				DFB1BF9022928CA30083EE24 /* lo_tom_F1.wav in Resources */,
 				D33C1AB8229D127700388C38 /* snare.wav in Resources */,
