@@ -16,15 +16,12 @@
 		D37BFE12229BEE1C00D287A0 /* install frame work.gif in Resources */ = {isa = PBXBuildFile; fileRef = D37BFE11229BEE1C00D287A0 /* install frame work.gif */; };
 		D3AD35B5229E41ED003C1BD0 /* piano screen.png in Resources */ = {isa = PBXBuildFile; fileRef = D3AD35B4229E41ED003C1BD0 /* piano screen.png */; };
 		D3E940F6229E46C40080E837 /* help screen.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E940F5229E46C40080E837 /* help screen.png */; };
-		DF3AD006228A3E8500F283D1 /* Conductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3AD005228A3E8500F283D1 /* Conductor.swift */; };
-		DF3AD008228A571800F283D1 /* sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3AD007228A571800F283D1 /* sequence.swift */; };
 		DF4D7A3D228E3DD4006BE82F /* digital-7-mono_[allfont.net].ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D7A3C228E3DD4006BE82F /* digital-7-mono_[allfont.net].ttf */; };
 		DF4D7A3F228E4306006BE82F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D7A3E228E4306006BE82F /* SettingViewController.swift */; };
 		DF9CE41D228E2F8500F774B6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CE41C228E2F8500F774B6 /* HomeViewController.swift */; };
 		DF9CE421228E30C100F774B6 /* VideoBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CE420228E30C100F774B6 /* VideoBackground.swift */; };
 		DF9CE423228E30F900F774B6 /* ErrorHanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CE422228E30F900F774B6 /* ErrorHanding.swift */; };
 		DF9CE425228E329700F774B6 /* Background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DF9CE424228E329700F774B6 /* Background.mp4 */; };
-		DFB1BF85229285C10083EE24 /* PlaySounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB1BF84229285C10083EE24 /* PlaySounds.swift */; };
 		DFB1BF9022928CA30083EE24 /* lo_tom_F1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8822928CA20083EE24 /* lo_tom_F1.wav */; };
 		DFB1BF9322928CA30083EE24 /* mid_tom_B1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8B22928CA20083EE24 /* mid_tom_B1.wav */; };
 		DFB1BF9422928CA30083EE24 /* bass_drum_C1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8C22928CA30083EE24 /* bass_drum_C1.wav */; };
@@ -52,15 +49,12 @@
 		D37BFE11229BEE1C00D287A0 /* install frame work.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "install frame work.gif"; sourceTree = "<group>"; };
 		D3AD35B4229E41ED003C1BD0 /* piano screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piano screen.png"; sourceTree = "<group>"; };
 		D3E940F5229E46C40080E837 /* help screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help screen.png"; sourceTree = "<group>"; };
-		DF3AD005228A3E8500F283D1 /* Conductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conductor.swift; sourceTree = "<group>"; };
-		DF3AD007228A571800F283D1 /* sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sequence.swift; sourceTree = "<group>"; };
 		DF4D7A3C228E3DD4006BE82F /* digital-7-mono_[allfont.net].ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7-mono_[allfont.net].ttf"; sourceTree = "<group>"; };
 		DF4D7A3E228E4306006BE82F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		DF9CE41C228E2F8500F774B6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DF9CE420228E30C100F774B6 /* VideoBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoBackground.swift; sourceTree = "<group>"; };
 		DF9CE422228E30F900F774B6 /* ErrorHanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHanding.swift; sourceTree = "<group>"; };
 		DF9CE424228E329700F774B6 /* Background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Background.mp4; sourceTree = "<group>"; };
-		DFB1BF84229285C10083EE24 /* PlaySounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySounds.swift; sourceTree = "<group>"; };
 		DFB1BF8822928CA20083EE24 /* lo_tom_F1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lo_tom_F1.wav; sourceTree = "<group>"; };
 		DFB1BF8B22928CA20083EE24 /* mid_tom_B1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mid_tom_B1.wav; sourceTree = "<group>"; };
 		DFB1BF8C22928CA30083EE24 /* bass_drum_C1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass_drum_C1.wav; sourceTree = "<group>"; };
@@ -189,9 +183,6 @@
 				DFC2E2722288F7F500E71D3B /* LaunchScreen.storyboard */,
 				DFC2E2752288F7F500E71D3B /* Info.plist */,
 				DFC2E26D2288F7F400E71D3B /* LearnPiano.xcdatamodeld */,
-				DF3AD005228A3E8500F283D1 /* Conductor.swift */,
-				DF3AD007228A571800F283D1 /* sequence.swift */,
-				DFB1BF84229285C10083EE24 /* PlaySounds.swift */,
 			);
 			path = LearnPiano;
 			sourceTree = "<group>";
@@ -297,15 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFB1BF85229285C10083EE24 /* PlaySounds.swift in Sources */,
 				DFC2E2692288F7F400E71D3B /* ViewController.swift in Sources */,
 				DF9CE423228E30F900F774B6 /* ErrorHanding.swift in Sources */,
 				DFC2E26F2288F7F400E71D3B /* LearnPiano.xcdatamodeld in Sources */,
-				DF3AD006228A3E8500F283D1 /* Conductor.swift in Sources */,
 				DFC2E2672288F7F400E71D3B /* AppDelegate.swift in Sources */,
 				DF4D7A3F228E4306006BE82F /* SettingViewController.swift in Sources */,
 				D355DDEB229843FE001E9526 /* HelpViewController.swift in Sources */,
-				DF3AD008228A571800F283D1 /* sequence.swift in Sources */,
 				DF9CE41D228E2F8500F774B6 /* HomeViewController.swift in Sources */,
 				DFC2E2812288FAB600E71D3B /* ScreenControl.swift in Sources */,
 				DF9CE421228E30C100F774B6 /* VideoBackground.swift in Sources */,

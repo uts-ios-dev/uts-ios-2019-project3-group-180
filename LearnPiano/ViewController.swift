@@ -170,9 +170,9 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     
     @IBAction func open3(_ sender: Any) {
         playeringFlag ^= b12Bit //
-        print("d8 is pressed")
+       
         if  playeringFlag&b12Bit == 0{
-            print("drum 8 is not playing")
+            
             openPlayer.stop()
             self.openTimer3.invalidate()
             self.open3.blink(enabled:false)
@@ -184,7 +184,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
             self.openTimer3 = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { (timer1) in
                 self.openPlayer.play()
-                print("play3")
+                
             })
             self.open3.backgroundColor = #colorLiteral(red: 0.09682316063, green: 0.5424412688, blue: 0.9204890286, alpha: 1)
             self.open3.blink()
@@ -194,10 +194,10 @@ class ViewController: UIViewController, AKKeyboardDelegate{
         
     }
     @IBAction func open2(_ sender: Any) {
-        playeringFlag ^= b11Bit //
-        print("d8 is pressed")
+        playeringFlag ^= b11Bit
+       
         if  playeringFlag&b11Bit == 0{
-            print("drum 8 is not playing")
+            
             openPlayer.stop()
             self.openTimer2.invalidate()
             self.open2.blink(enabled:false)
@@ -209,7 +209,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
             self.openTimer2 = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer1) in
                 self.openPlayer.play()
-                print("play3")
+                
             })
             self.open2.backgroundColor = #colorLiteral(red: 0.09682316063, green: 0.5424412688, blue: 0.9204890286, alpha: 1)
             self.open2.blink()
@@ -219,10 +219,10 @@ class ViewController: UIViewController, AKKeyboardDelegate{
         
     }
     @IBAction func open1(_ sender: Any) {
-        playeringFlag ^= b10Bit //
-        print("d8 is pressed")
+        playeringFlag ^= b10Bit
+       
         if  playeringFlag&b10Bit == 0{
-            print("drum 8 is not playing")
+            
             openPlayer.stop()
             self.openTimer1.invalidate()
             self.open1.blink(enabled:false)
@@ -234,7 +234,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
             self.openTimer1 = Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: { (timer1) in
                 self.openPlayer.play()
-                print("play3")
+               
             })
             self.open1.backgroundColor = #colorLiteral(red: 0.09682316063, green: 0.5424412688, blue: 0.9204890286, alpha: 1)
             self.open1.blink()
@@ -244,10 +244,10 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     }
     
     @IBAction func closed3(_ sender: Any) {
-        playeringFlag ^= b9Bit //
-        print("d8 is pressed")
+        playeringFlag ^= b9Bit
+        
         if  playeringFlag&b9Bit == 0{
-            print("drum 8 is not playing")
+           
             closedPlayer.stop()
             self.closedTimer3.invalidate()
             self.closed3.blink(enabled:false)
@@ -259,7 +259,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
             self.closedTimer3 = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { (timer1) in
                 self.closedPlayer.play()
-                print("play3")
+                
             })
             self.closed3.backgroundColor = #colorLiteral(red: 0.5867986121, green: 0, blue: 0.9098039269, alpha: 1)
             self.closed3.blink()
@@ -270,9 +270,9 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     
     @IBAction func closed2(_ sender: Any) {
         playeringFlag ^= b8Bit //
-        print("d8 is pressed")
+       
         if  playeringFlag&b8Bit == 0{
-            print("drum 8 is not playing")
+            
             closedPlayer.stop()
             self.closedTimer2.invalidate()
             self.closed2.blink(enabled:false)
@@ -284,7 +284,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
             self.closedTimer2 = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer1) in
                 self.closedPlayer.play()
-                print("play3")
+                
             })
             self.closed2.backgroundColor = #colorLiteral(red: 0.5867986121, green: 0, blue: 0.9098039269, alpha: 1)
             self.closed2.blink()
@@ -294,10 +294,10 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     }
     
     @IBAction func closed1(_ sender: Any) {
-        playeringFlag ^= b7Bit //
-        print("d7 is pressed")
+        playeringFlag ^= b7Bit
+     
         if  playeringFlag&b7Bit == 0{
-            print("drum 7 is not playing")
+            
             closedPlayer.stop()
             self.closedTimer1.invalidate()
             self.closed1.blink(enabled:false)
@@ -309,7 +309,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
             self.closedTimer1 = Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: { (timer1) in
                 self.closedPlayer.play()
-                print("play3")
+               
             })
             self.closed1.backgroundColor = #colorLiteral(red: 0.5867986121, green: 0, blue: 0.9098039269, alpha: 1)
             self.closed1.blink()
@@ -322,9 +322,9 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     @IBAction func snare3(_ sender: Any) {
         
         playeringFlag ^= b6Bit
-        print("d3 is pressed")
+        
         if  playeringFlag&b6Bit == 0{
-            print("drum 4 is not playing")
+            
             snarePlayer.stop()
             self.snareTimer3.invalidate()
             self.snare3.blink(enabled:false)
@@ -336,7 +336,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
             self.snareTimer3 = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { (timer1) in
                 self.snarePlayer.play()
-                print("play3")
+                
             })
             self.snare3.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
             self.snare3.blink()
@@ -348,9 +348,9 @@ class ViewController: UIViewController, AKKeyboardDelegate{
     
     @IBAction func snare2(_ sender: Any) {
         playeringFlag ^= b5Bit //
-        print("s2 is pressed")
+        
         if  playeringFlag&b5Bit == 0{
-            print("snare 2 is not playing")
+            
             snarePlayer.stop()
             self.snareTimer2.invalidate()
             self.snare2.blink(enabled:false)
@@ -362,7 +362,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
             self.snareTimer2 = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer1) in
                 self.snarePlayer.play()
-                print("play3")
+               
             })
             self.snare2.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
             self.snare2.blink()
@@ -389,7 +389,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
             self.snareTimer1 = Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: { (timer1) in
                 self.snarePlayer.play()
-                print("play3")
+                
             })
             self.snare1.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0, blue: 0.598151031, alpha: 1)
             self.snare1.blink()
@@ -417,7 +417,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
             self.drumTimer3 = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { (timer1) in
                 self.drumPlayer.play()
-                print("play3")
+               
             })
             self.drum3.backgroundColor = #colorLiteral(red: 1, green: 0.881786045, blue: 0, alpha: 1)
             self.drum3.blink()
@@ -444,7 +444,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
             self.drumTimer2 = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer1) in
                 self.drumPlayer.play()
-                print("play2")
+                
             })
             self.drum2.backgroundColor = #colorLiteral(red: 1, green: 0.881786045, blue: 0, alpha: 1)
             self.drum2.blink()
@@ -469,7 +469,7 @@ class ViewController: UIViewController, AKKeyboardDelegate{
             
             self.drumTimer1 = Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: { (timer1) in
                 self.drumPlayer.play()
-                print("play1")
+            
             })
             self.drum1.backgroundColor = #colorLiteral(red: 1, green: 0.881786045, blue: 0, alpha: 1)
             self.drum1.blink()
