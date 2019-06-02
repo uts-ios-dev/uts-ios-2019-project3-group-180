@@ -2,8 +2,8 @@
 //  VideoBackground.swift
 //  LearnPiano
 //
-//  Created by xianyulee on 2019/5/17.
-//  Copyright © 2019 Xianyu. All rights reserved.
+//  Created by Yizhe CHEN on 2019/5/17.
+//  Copyright © 2019 Yizhe CHEN. All rights reserved.
 //
 
 import AVFoundation
@@ -14,8 +14,9 @@ public class VideoBackground {
     /// Singleton that can play one video on one `UIView` at a time.
     public static let shared = VideoBackground()
     
-    /// Change this `CGFloat` to adjust the darkness of the video. Value `0` to `1`. Higher numbers are darker. Setting
-    /// to an invalid value does nothing.
+    /// Change this `CGFloat` to adjust the darkness of the video.
+    ///Value `0` to `1`. Higher numbers are darker.
+    ///Setting to an invalid value does nothing.
     public var darkness: CGFloat = 0 {
         didSet {
             if darkness > 0 && darkness <= 1 {
@@ -24,7 +25,7 @@ public class VideoBackground {
         }
     }
     
-    /// Change this `Bool` to mute/unmute the video.
+    ///Change this `Bool` to mute/unmute the video.
     public var isMuted = true {
         didSet {
             playerLayer.player?.isMuted = isMuted
