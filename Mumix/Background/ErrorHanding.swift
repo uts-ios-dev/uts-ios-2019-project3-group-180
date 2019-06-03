@@ -2,8 +2,8 @@
 //  ErrorHanding.swift
 //  LearnPiano
 //
-//  Created by xianyulee on 2019/5/17.
-//  Copyright © 2019 Xianyu. All rights reserved.
+//  Created by Yizhe CHEN on 2019/5/17.
+//  Copyright © 2019 Yizhe CHEN. All rights reserved.
 //
 
 import Foundation

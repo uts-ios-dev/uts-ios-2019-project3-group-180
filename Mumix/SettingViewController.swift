@@ -4,8 +4,11 @@
 //
 //  Created by Yizhe CHEN on 2019/5/17.
 //
-// Setting page to control the attackDuration
-//Setting page to control the DecayDuration
+// Setting page to control the AttackDuration
+// Setting page to control the DecayDuration
+// Setting page to control the SustainLevel
+// Setting page to control the releaseDuration
+//
 import AudioKit
 import UIKit
 import AudioKitUI
@@ -57,8 +60,6 @@ class SettingViewController: UIViewController {
             self.oscillator.decayDuration = Double(dec)
             self.oscillator.sustainLevel = Double(sus)
             self.oscillator.releaseDuration = Double(rel)
-            
-            
         }
         
         stackView.addArrangedSubview(adsrView)
