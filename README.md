@@ -1,4 +1,4 @@
-#  Project 3 - Learn Piano
+#  Project 3 - Mumix
 
 ## Contributors 
 
