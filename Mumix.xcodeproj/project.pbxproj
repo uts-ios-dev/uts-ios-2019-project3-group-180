@@ -22,11 +22,6 @@
 		DF9CE421228E30C100F774B6 /* VideoBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CE420228E30C100F774B6 /* VideoBackground.swift */; };
 		DF9CE423228E30F900F774B6 /* ErrorHanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CE422228E30F900F774B6 /* ErrorHanding.swift */; };
 		DF9CE425228E329700F774B6 /* Background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DF9CE424228E329700F774B6 /* Background.mp4 */; };
-		DFB1BF9022928CA30083EE24 /* lo_tom_F1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8822928CA20083EE24 /* lo_tom_F1.wav */; };
-		DFB1BF9322928CA30083EE24 /* mid_tom_B1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8B22928CA20083EE24 /* mid_tom_B1.wav */; };
-		DFB1BF9422928CA30083EE24 /* bass_drum_C1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8C22928CA30083EE24 /* bass_drum_C1.wav */; };
-		DFB1BF9622928CA30083EE24 /* clap_D#1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8E22928CA30083EE24 /* clap_D#1.wav */; };
-		DFB1BF9722928CA30083EE24 /* hi_tom_D2.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFB1BF8F22928CA30083EE24 /* hi_tom_D2.wav */; };
 		DFC2E2672288F7F400E71D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2E2662288F7F400E71D3B /* AppDelegate.swift */; };
 		DFC2E2692288F7F400E71D3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2E2682288F7F400E71D3B /* ViewController.swift */; };
 		DFC2E26C2288F7F400E71D3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC2E26A2288F7F400E71D3B /* Main.storyboard */; };
@@ -55,12 +50,7 @@
 		DF9CE420228E30C100F774B6 /* VideoBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoBackground.swift; sourceTree = "<group>"; };
 		DF9CE422228E30F900F774B6 /* ErrorHanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHanding.swift; sourceTree = "<group>"; };
 		DF9CE424228E329700F774B6 /* Background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Background.mp4; sourceTree = "<group>"; };
-		DFB1BF8822928CA20083EE24 /* lo_tom_F1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lo_tom_F1.wav; sourceTree = "<group>"; };
-		DFB1BF8B22928CA20083EE24 /* mid_tom_B1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mid_tom_B1.wav; sourceTree = "<group>"; };
-		DFB1BF8C22928CA30083EE24 /* bass_drum_C1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass_drum_C1.wav; sourceTree = "<group>"; };
-		DFB1BF8E22928CA30083EE24 /* clap_D#1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "clap_D#1.wav"; sourceTree = "<group>"; };
-		DFB1BF8F22928CA30083EE24 /* hi_tom_D2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hi_tom_D2.wav; sourceTree = "<group>"; };
-		DFC2E2632288F7F400E71D3B /* LearnPiano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnPiano.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFC2E2632288F7F400E71D3B /* Mumix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mumix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC2E2662288F7F400E71D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFC2E2682288F7F400E71D3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DFC2E26B2288F7F400E71D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,32 +116,12 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
-		DFB1BF9922928CB00083EE24 /* Drum */ = {
-			isa = PBXGroup;
-			children = (
-				DFB1BF8C22928CA30083EE24 /* bass_drum_C1.wav */,
-				DFB1BF8E22928CA30083EE24 /* clap_D#1.wav */,
-				DFB1BF8F22928CA30083EE24 /* hi_tom_D2.wav */,
-				DFB1BF8822928CA20083EE24 /* lo_tom_F1.wav */,
-				DFB1BF8B22928CA20083EE24 /* mid_tom_B1.wav */,
-			);
-			path = Drum;
-			sourceTree = "<group>";
-		};
-		DFB1BFA022928CD50083EE24 /* Samples */ = {
-			isa = PBXGroup;
-			children = (
-				DFB1BF9922928CB00083EE24 /* Drum */,
-			);
-			path = Samples;
-			sourceTree = "<group>";
-		};
 		DFC2E25A2288F7F400E71D3B = {
 			isa = PBXGroup;
 			children = (
 				D37BFE0A229BE6F200D287A0 /* readMeImages */,
 				D37BFE09229BE6C100D287A0 /* README.md */,
-				DFC2E2652288F7F400E71D3B /* LearnPiano */,
+				DFC2E2652288F7F400E71D3B /* Mumix */,
 				DFC2E2642288F7F400E71D3B /* Products */,
 				DFC2E27B2288FA2100E71D3B /* Frameworks */,
 			);
@@ -160,15 +130,14 @@
 		DFC2E2642288F7F400E71D3B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DFC2E2632288F7F400E71D3B /* LearnPiano.app */,
+				DFC2E2632288F7F400E71D3B /* Mumix.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DFC2E2652288F7F400E71D3B /* LearnPiano */ = {
+		DFC2E2652288F7F400E71D3B /* Mumix */ = {
 			isa = PBXGroup;
 			children = (
-				DFB1BFA022928CD50083EE24 /* Samples */,
 				DFB1BF83229283930083EE24 /* Sounds */,
 				DF4D7A40228E4317006BE82F /* Background */,
 				DF9CE42A228E389A00F774B6 /* Font */,
@@ -184,7 +153,7 @@
 				DFC2E2752288F7F500E71D3B /* Info.plist */,
 				DFC2E26D2288F7F400E71D3B /* LearnPiano.xcdatamodeld */,
 			);
-			path = LearnPiano;
+			path = Mumix;
 			sourceTree = "<group>";
 		};
 		DFC2E27B2288FA2100E71D3B /* Frameworks */ = {
@@ -199,9 +168,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DFC2E2622288F7F400E71D3B /* LearnPiano */ = {
+		DFC2E2622288F7F400E71D3B /* Mumix */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DFC2E2782288F7F500E71D3B /* Build configuration list for PBXNativeTarget "LearnPiano" */;
+			buildConfigurationList = DFC2E2782288F7F500E71D3B /* Build configuration list for PBXNativeTarget "Mumix" */;
 			buildPhases = (
 				DFC2E25F2288F7F400E71D3B /* Sources */,
 				DFC2E2602288F7F400E71D3B /* Frameworks */,
@@ -211,9 +180,9 @@
 			);
 			dependencies = (
 			);
-			name = LearnPiano;
+			name = Mumix;
 			productName = LearnPiano;
-			productReference = DFC2E2632288F7F400E71D3B /* LearnPiano.app */;
+			productReference = DFC2E2632288F7F400E71D3B /* Mumix.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -237,7 +206,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DFC2E25E2288F7F400E71D3B /* Build configuration list for PBXProject "LearnPiano" */;
+			buildConfigurationList = DFC2E25E2288F7F400E71D3B /* Build configuration list for PBXProject "Mumix" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -250,7 +219,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DFC2E2622288F7F400E71D3B /* LearnPiano */,
+				DFC2E2622288F7F400E71D3B /* Mumix */,
 			);
 		};
 /* End PBXProject section */
@@ -261,20 +230,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF4D7A3D228E3DD4006BE82F /* digital-7-mono_[allfont.net].ttf in Resources */,
-				DFB1BF9322928CA30083EE24 /* mid_tom_B1.wav in Resources */,
 				D37BFE0E229BE71300D287A0 /* setting screen.png in Resources */,
-				DFB1BF9622928CA30083EE24 /* clap_D#1.wav in Resources */,
 				DFC2E2742288F7F500E71D3B /* LaunchScreen.storyboard in Resources */,
 				DF9CE425228E329700F774B6 /* Background.mp4 in Resources */,
-				DFB1BF9422928CA30083EE24 /* bass_drum_C1.wav in Resources */,
 				D3E940F6229E46C40080E837 /* help screen.png in Resources */,
 				D33C1AB7229D127700388C38 /* kick.wav in Resources */,
-				DFB1BF9722928CA30083EE24 /* hi_tom_D2.wav in Resources */,
 				D3AD35B5229E41ED003C1BD0 /* piano screen.png in Resources */,
 				DFC2E2712288F7F500E71D3B /* Assets.xcassets in Resources */,
 				DFC2E26C2288F7F400E71D3B /* Main.storyboard in Resources */,
 				D33C1AB9229D127700388C38 /* hiHat.wav in Resources */,
-				DFB1BF9022928CA30083EE24 /* lo_tom_F1.wav in Resources */,
 				D33C1AB8229D127700388C38 /* snare.wav in Resources */,
 				D37BFE12229BEE1C00D287A0 /* install frame work.gif in Resources */,
 				D33C1ABD229D1A3000388C38 /* openHiHat.wav in Resources */,
@@ -448,7 +412,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = LearnPiano/Info.plist;
+				INFOPLIST_FILE = Mumix/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,7 +435,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = LearnPiano/Info.plist;
+				INFOPLIST_FILE = Mumix/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -487,7 +451,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DFC2E25E2288F7F400E71D3B /* Build configuration list for PBXProject "LearnPiano" */ = {
+		DFC2E25E2288F7F400E71D3B /* Build configuration list for PBXProject "Mumix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DFC2E2762288F7F500E71D3B /* Debug */,
@@ -496,7 +460,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DFC2E2782288F7F500E71D3B /* Build configuration list for PBXNativeTarget "LearnPiano" */ = {
+		DFC2E2782288F7F500E71D3B /* Build configuration list for PBXNativeTarget "Mumix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DFC2E2792288F7F500E71D3B /* Debug */,
