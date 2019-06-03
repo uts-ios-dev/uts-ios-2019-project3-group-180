@@ -24,7 +24,6 @@ class HelpViewController: UIViewController {
         settingsHelpLabel.lineBreakMode = .byWordWrapping
         settingsHelpLabel.numberOfLines = 0
         settingsHelpLabel.text = "Monophonic - Play one note at a time.\nPolyphonic - Play multiple notes at a time.\n\nSlide the colours to tweak the piano output, the line represents how the sound's volume changes over time.\nAttack - the time taken to reach from nil to peak.\nDecay - The the of the run down from the attack to sustain.\nSustain - the volume you hear when holding the key.\nRelease - The time taken for the volume to drop to 0 after releasing the key."
-        // Do any additional setup after loading the view.
     }
     
 

@@ -10,7 +10,7 @@ Yizhe Chen - 12670131
 
 ## Description 
 
-Learn piano, is a keyboard app for musicians who are away from home and want to conveniently test a melody that they have thought of. 
+Mumix, is a keyboard app for musicians who are away from home and want to conveniently test a melody that they have thought of. 
 
 ### Keyboard Scene
 
@@ -67,7 +67,7 @@ To install this and run this appplication:
 2. Download and open this project folder
 3. Click this link to download the AudioKit and AudioKitUI frameworks http://github.com/audiokit/AudioKit/releases/download/v4.7.2/AudioKit-iOS-4.7.2.zip
 4. After downloading, unzip and open the file.
-5. After opening the folder, the two frameworks should be there. Move the two frameworks into the Learn Piano project folder like below.
+5. After opening the folder, the two frameworks should be there. Move the two frameworks into the project folder like below.
 
 <kbd>
     <img src="readMeImages/install frame work.gif"/>
